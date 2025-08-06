@@ -13,6 +13,37 @@ return {
     end,
   },
 
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require("nvim-tree").setup({
+        sort = {
+          sorter = "case_sensitive",
+        },
+        view = {
+          width = 30,
+        },
+        renderer = {
+          group_empty = true,
+          root_folder_label = false,
+          icons = {
+            web_devicons = {
+              file = {
+                color = false,
+              },
+            },
+            git_placement = "after",
+          },
+        },
+        filters = {
+          dotfiles = false,
+          custom = { ".uid", ".git" },
+          git_ignored = true,
+        },
+      })
+    end,
+  }
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
