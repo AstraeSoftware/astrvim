@@ -1,3 +1,10 @@
+# AstrVim - Astrae Software NeoVim Configuration
+This is a configuration for the neovim distribution "NvChad", so you'll have to install that if you want to use this, I guess. Not like there's any reason to use it
+
+## Features:
+- transparent background
+
+# Default NvChad Starter README
 **This repo is supposed to be used as config by NvChad users!**
 
 - The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
