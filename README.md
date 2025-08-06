@@ -8,7 +8,7 @@ This is a configuration for the neovim distribution "NvChad", so you'll have to 
 
 ### LSPs:
 some of these won't work out of the box, a note will be provided giving additional information
-- `csharp_ls` - requires `dotnet-sdk`, and dotnet package `csharp-ls`. make sure this is in your system path
+- `omnisharp` - requires `dotnet-sdk` package, requires omnisharp, see `lspconfig.lua`
 
 # Default NvChad Starter README
 **This repo is supposed to be used as config by NvChad users!**

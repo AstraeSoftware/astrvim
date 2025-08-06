@@ -1,6 +1,30 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "csharp_ls" }
+local lspconfig = require "lspconfig"
+
+local servers = { "html", "cssls" }
 vim.lsp.enable(servers)
+
+lspconfig.omnisharp.setup{
+    cmd = { "dotnet", "/home/astrae/programs/omnisharp/OmniSharp.dll" },
+
+    settings = {
+        FormattingOptions = {
+            EnableEditorSupportConfig = true,
+            OrganizeImports = nil,
+        },
+        MsBuild = {
+            LoadProjectsOnDemand = nil,
+        },
+        RoslynExtensionOptions = {
+            EnableAnalyzersSupport = nil,
+            EnableImportCollections = nil,
+            AnalyzeOpenDocumentOnly = nil,
+        },
+        Sdk = {
+            IncludePrereleases = true,
+        },
+    },
+}
 
 -- read :h vim.lsp.config for changing options of lsp servers 
