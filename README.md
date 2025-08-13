@@ -5,6 +5,9 @@ This is a configuration for the neovim distribution "NvChad", so you'll have to 
 - transparent background
 - no colored nvim-tree icons
 - no dotfiles, .git, or ".uid" (for godot) in nvim-tree
+- relative line numbers on by default
+- line limit visualiser of 81
+- default tab width of 4
 
 ### LSPs:
 some of these won't work out of the box, a note will be provided giving additional information
