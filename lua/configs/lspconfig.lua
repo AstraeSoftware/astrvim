@@ -2,7 +2,7 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls" }
+local servers = { "html", "cssls", "clangd" }
 vim.lsp.enable(servers)
 
 lspconfig.omnisharp.setup{

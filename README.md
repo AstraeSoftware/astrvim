@@ -11,6 +11,7 @@ This is a configuration for the neovim distribution "NvChad", so you'll have to 
 
 ### LSPs:
 some of these won't work out of the box, a note will be provided giving additional information
+- `clangd`
 - `omnisharp` - requires `dotnet-sdk` package, requires omnisharp, edit path in `lspconfig.lua`
 
 # Default NvChad Starter README
